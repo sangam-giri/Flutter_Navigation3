@@ -9,10 +9,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Home Page"),
+        title: const Text("Home Page"),
       ),
-      body: ElevatedButton(onPressed: ()=> Navigator.pushNamed(context, route.settingsPage),
-       child: Text("Go to settings page")),
+      body: Center(
+        child: ElevatedButton(onPressed: ()=> Navigator.pushNamed(context, route.settingsPage),
+         child: const Text("Go to settings page")),
+      ),
     );
   }
 }

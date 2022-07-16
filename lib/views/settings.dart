@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import '../route/routes.dart' as route;
 
@@ -11,11 +9,13 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Settings Page"),
+        title: const Text("Settings Page"),
       ),
-      body: ElevatedButton(
-      onPressed: ()=> Navigator.pushNamed(context, route.homePage), 
-      child: Text("Go to home page")),
+      body: Center(
+        child: ElevatedButton(
+        onPressed: ()=> Navigator.pushNamed(context, route.loginPage), 
+        child: const Text("Go to home page")),
+      ),
     );
     
   }
